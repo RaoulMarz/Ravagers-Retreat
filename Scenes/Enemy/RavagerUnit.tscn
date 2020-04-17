@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [  ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "walk",
+"speed": 5.0
+} ]
+
+[node name="RavagerUnit" type="KinematicBody2D"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 2.81439, -45.853, 95.8929, -18.6454, 97.3248, 18.586, 1.38245, 52.9534, -83.1042, 21.4499, -84.5362, -15.7815 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "walk"

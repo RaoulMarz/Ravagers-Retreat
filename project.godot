@@ -27,8 +27,32 @@ _global_script_class_icons={
 [application]
 
 config/name="Ravagers_Retreat"
+run/main_scene="res://Scenes/MapNode/MapGenerateTiler.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=1920
+window/size/height=1080
+window/size/resizable=false
+window/size/borderless=true
+window/size/fullscreen=true
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
+
+[memory]
+
+limits/multithreaded_server/rid_pool_prealloc=90
+
+[network]
+
+limits/debugger_stdout/max_chars_per_second=44000
+limits/debugger_stdout/max_messages_per_frame=350
+limits/debugger_stdout/max_errors_per_second=300
+limits/debugger_stdout/max_warnings_per_second=300
 
 [rendering]
 
+quality/driver/fallback_to_gles2=true
+threads/thread_model=2
 environment/default_environment="res://default_env.tres"
